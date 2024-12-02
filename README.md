@@ -26,6 +26,7 @@ This portfolio is a single-page website designed to provide insights about me, i
 - **Social Links**: Direct links to my LinkedIn, GitHub, and more.
 - **Dynamic Text Animation**: Using Typed.js for an engaging introduction.
 - **Smooth Scrolling**: Navigation with a seamless scrolling effect.
+- **Dark Mode**: Toggle between light and dark themes for a better viewing experience.
 
 ---
 
@@ -35,10 +36,12 @@ This portfolio is a single-page website designed to provide insights about me, i
 - **CSS**: For styling and layout:
   - Responsive design with media queries.
   - Animations and hover effects.
+  - Dark mode styling with CSS variables.
 - **JavaScript**: For interactivity and dynamic features:
   - Navbar scroll detection.
   - Toggle menu functionality.
   - Typed.js integration.
+  - Dark mode toggle functionality.
 
 ---
 

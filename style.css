@@ -13,9 +13,18 @@
 
 :root {
     --bg-color: #fff;
+    --heading-text-color: #fff;
     --second-bg-color: #d5fdf9;
     --text-color: #000;
     --main-color: #007f73;
+}
+
+.dark-mode {
+    --bg-color: #000;
+    --heading-text-color: #fff;
+    --second-bg-color: #002b1f;
+    --text-color: #90EE90;
+    --main-color: #006400;
 }
 
 html {
@@ -53,7 +62,7 @@ section {
 .logo {
     font-family: "Jaro", serif;
     font-size: 3rem;
-    color: var(--bg-color);
+    color: var(--heading-text-color);
     font-weight: 400;
     cursor: pointer;
     transition: 0.3s ease;
@@ -65,7 +74,7 @@ section {
 
 .navbar a {
     font-size: 1.9rem;
-    color: var(--bg-color);
+    color: var(--heading-text-color);
     margin-left: 4rem;
     font-weight: 700;
     transition: 0.3s ease;
@@ -91,7 +100,7 @@ section {
 
 #menu-icon {
     font-size: 3.6rem;
-    color: var(--bg-color);
+    color: var(--heading-text-color);
     cursor: pointer;
     display: none;
     position: relative;
@@ -99,6 +108,36 @@ section {
 }
 
 /* ========== Home Section ========== */
+
+#switch-theme {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+}
+
+#switch-theme svg {
+    fill: var(--main-color);
+}
+
+#switch-theme svg:last-child {
+    display: none;
+}
+
+.dark-mode #switch-theme svg:first-child {
+    display: none;
+}
+
+.dark-mode #switch-theme svg:last-child {
+    display: block;
+}
 
 .home {
     display: flex;
@@ -159,6 +198,7 @@ span {
 }
 
 .home-content p {
+    letter-spacing: 2px;
     font-size: 1.6rem;
 }
 
@@ -231,6 +271,7 @@ span {
 }
 
 .about-content p {
+    letter-spacing: 2px;
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
@@ -288,6 +329,7 @@ span {
 }
 
 .education-box p {
+    letter-spacing: 1px;
     font-size: 2.8rem;
     margin: 2rem 0 2rem;
     color: var(--text-color);
@@ -390,6 +432,7 @@ span {
 }
 
 .footer .copyright {
+    letter-spacing: 1px;
     text-align: center;
     font-size: 16px;
     color: var(--text-color);
@@ -400,6 +443,20 @@ span {
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
+    }
+
+    #switch-theme {
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        right: 15px;
     }
 }
 
@@ -499,6 +556,20 @@ span {
 @media(max-width: 617px) {
     html {
         font-size: 50%;
+    }
+
+    #switch-theme {
+        height: 40px;
+        width: 40px;
+        padding: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        right: 10px;
     }
 
     .btn {

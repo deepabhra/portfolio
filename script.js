@@ -50,3 +50,10 @@ const typed = new Typed(".multiple-text", {
     backDelay: 1200,
     loop: true
 })
+
+// ~~~~~~~~~~ Dark Mode ~~~~~~~~~~
+
+const themeButton = document.getElementById('switch-theme');
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});

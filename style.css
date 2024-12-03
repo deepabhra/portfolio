@@ -536,7 +536,7 @@ span {
         font-size: 22px;
     }
 
-    .navbar .active {
+    .navbar.active {
         right: 0;
     }
 
